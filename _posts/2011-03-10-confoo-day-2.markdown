@@ -1,0 +1,16 @@
+---
+layout: post
+title: 'Confoo Day 2'
+---
+
+Another day at Confoo!
+
+I've started the day with <a href="http://confoo.ca/en/2011/session/designing-http-interfaces-and-restful-web-services">Designing HTTP Interfaces and RESTful Web Services</a>. So far, it's my favorite talk of the event. The guy is very knowledgeable about all things HTTP and REST and had a funny way to present. We learned about what it really takes to design clean and efficient HTTP and REST api. It was the first time I heard about the <a href="http://martinfowler.com/articles/richardsonMaturityModel.html">Richardson Maturity Model</a>. I encourage you to take a look at the slides of this one, it was really good!
+
+Then I went to <a href="http://confoo.ca/en/2011/session/scalable-architecture-101">Scalable Architecture 101</a>. I think they were too much information into this one. We basically go through all the typical servers (web, database, mail, cache, DNS and others!) and talk about what it takes to make those scalable. One point that the presenter insists on, and that I agree with, is to never use a database to store web sessions. Use Memcached!
+
+After a nice lunch with other attendees, I attended a <a href="http://confoo.ca/en/2011/session/panel-which-nosql-database-should-you-use">Panel: Which NoSQL database should you use?</a> Three panelists representing respectively CouchDB, Cassandra and MongoDB were there answering questions of a moderator and the audience. Basically, they talked about how those 3 products handle <a href="http://en.wikipedia.org/wiki/ACID">ACID</a>. To me, CouchDB stood as the most interesting of the group, but I do not think the Cassandra representative did a good job at promoting this db.
+
+I concluded the day with <a href="http://confoo.ca/en/2011/session/linked-data-the-new-black">Linked Data: The new black</a>. It was an introduction to RDF and the principles of the semantic web. I think I was a bit tired at this point because I had trouble keeping my focus. But the guy did a fairly good job at showing how this is useful and that we are only at the beginning! Web 3.0 looks promising!
+
+Interesting day!

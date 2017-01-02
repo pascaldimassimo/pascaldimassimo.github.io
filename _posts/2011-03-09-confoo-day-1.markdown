@@ -1,0 +1,18 @@
+---
+layout: post
+title: 'Confoo Day 1'
+---
+
+I've spent my first day at <a href="http://confoo.ca/">Confoo.ca</a> here in Montréal.  I learned a lot in a single day! Here's my thoughts about the conferences I attended.
+
+I've started the day with <a href="http://confoo.ca/en/2011/session/java-ee-6-how-j2ee-became-popular-again">Java EE 6 - how J2EE became popular again</a>. We learned about the new Java EE 6 released a couple of months ago. We spent most of the time exploring the features of the <a href="http://java.sun.com/javaee/sdk/resources.jsp">web profile</a>. It's interesting to see how the standard Java technologies are now influenced by open source products like Spring, Guice and Hibernate.
+
+Then, I went to a presentation on <a href="http://confoo.ca/en/2011/session/as-t-on-encore-besoin-d-un-framework-web">whether or not we still need Java web frameworks</a>. The presenter's main argument was that the traditional Java web frameworks like Struts, Tapestry or Wicket are not appropriate anymore. He even got as far to say that MVC is not valid anymore! Some attendees were skeptic. He advocates the approach of picking only the products that are needed to get the job done, not relying on a complete frameworks. He then presented us the solution that they built for a client using different products like Jersey, Socket.io and Reddis.
+
+After lunch, I went to a somewhat related talk entitled <a href="http://confoo.ca/en/2011/session/why-mvc-is-not-an-application-architecture">Why MVC is not an application architecture</a>. The presenter started by explaining us that, originally, the MVC pattern was nothing more than the <a href="http://en.wikipedia.org/wiki/Observer_pattern">Observer pattern</a> for UI. According to him, it has nothing to do with the Web, especially not for today's web application. He then got into different patterns to help PHP developers build more layered applications. To me, it was interesting to hear how the PHP community is applying patterns similar to the one described in the <a href="http://www.corej2eepatterns.com/">Core J2EE Patterns book</a>.
+
+After that, I got into a completely different subject, that is <a href="http://confoo.ca/en/2011/session/an-overview-of-flash-storage-for-databases">An Overview of Flash Storage for Databases</a>. The talk was an overview of the current state of the technologies related to enterprise SSD hard drives. While still expansive, those drives are way more efficient in terms of <a href="http://en.wikipedia.org/wiki/IOPS">IOPS</a>. The presenter claimed that, to really take benefits of them, applications, especially RDMS, needs to change the algorithms they use to read and write data to disk.
+
+The last talk I attended was <a href="http://confoo.ca/en/2011/session/building-servers-with-node-js">Building servers with Node.js</a>. We started by being introduced to the general principles of <a href="http://en.wikipedia.org/wiki/Asynchronous_I/O">evented I/O</a>. We then got a nice introduction to Node.js by seeing the traditional echo server example. While I really think that asynchronous is the way to go to have scalable web servers, I am not comfortable with the spaghetti code that results of the use of callbacks.  I like the approach taken by other evented I/O products like <a href="https://github.com/tarcieri/cool.io">cool.io</a> and <a href="https://github.com/sonatype/async-http-client">async-http-client</a> to make the code more readable. But nevertheless, I think this is a really nice software!
+
+I really enjoyed that first day and I am looking forward to the next!

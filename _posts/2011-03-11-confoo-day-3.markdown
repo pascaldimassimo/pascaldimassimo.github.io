@@ -1,0 +1,18 @@
+---
+layout: post
+title: 'Confoo Day 3'
+---
+
+Today started with <a href="http://confoo.ca/en/2011/session/scaling-web-apps-with-rabbitmq">Scaling Web Apps with RabbitMQ</a>. We were introduced to the basics of <a href="http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol">AMQP</a>. We went through some use cases where using a message queue system made sense for a web application. An example is images processing, which can be done asynchronously by sending those jobs to a process via RabbitMQ.
+
+Next it was <a href="http://confoo.ca/en/2011/session/varnish-in-action">Varnish in action</a>. Varnish is a web server accelerator that works by caching page content. It is configured to sit in front of the web server so that it protects it from serving request for which the response is already in the cache. It is also called a <a href="http://en.wikipedia.org/wiki/Reverse_proxy">reverse proxy</a>. We were presented some general configuration guidelines.
+
+I was then introduced to <a href="http://confoo.ca/en/2011/session/what-every-developer-should-know-about-performance">What every developer should know about Performance</a>. It was the third talk I attended by <a href="http://confoo.ca/en/speaker/morgan-tocker">Morgan Tocker</a> and I did not regret it because he's a great talker. For him, the main aspect to consider when trying to optimize the performance of a web application is the response time. But not only the average response time. It is important to properly log the response time of all requests in order to determine in what circumstances it is bad. We should also log what each request is doing so that we know where the time was spent. He mentioned that we should not be afraid of activating those logs in production as the overhead of this is generally low and because this is crucial data in order to optimize the performances.
+
+Just before lunch, we were lectured by a Microsoft's representative on <a href="http://confoo.ca/en/2011/session/interoperability-and-web-standards">Interoperability and Web Standards</a>. The presenter worked hard to convince us that Microsoft has changed and that it is now working to implement open standards. This was an awkward moment.
+
+After lunch was a presentation on <a href="http://confoo.ca/en/2011/session/solr-search-engine-beyond-the-basics">Solr Search Engine: Beyond The Basics</a>. Despite the fact that I already know Solr well, I learned a couple of things during this talk, like that you can define a default core. The presenter was obviously well-versed in Solr and the slides were funny!
+
+My last talk of the day was <a href="http://confoo.ca/en/2011/session/step-by-step-gc-tuning-in-the-hotspot-jvm">Step by Step: GC Tuning in the HotSpot JVM</a>. That was pretty technical stuff for a Friday afternoon! We learned the basics of <a href="http://en.wikipedia.org/wiki/Garbage_collection_(computer_science)#Generational_GC_.28ephemeral_GC.29">generational GC</a> in HotSpot. We discussed the differences between the Parallel Old collector and the Concurrent Mark-Sweep collector. We went trough some settings to control the behavior of those collectors. The presenter suggested that we should always let the GC log activated in production in order to monitor any problem related to GC in an application. Similar to what Morgan Tocker said earlier this day, we should not fear the overhead incurred by logging, as this is vital data.
+
+So that was it! I really enjoyed the time spent at Confoo. I learned quite a lot!
